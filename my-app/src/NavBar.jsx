@@ -2,11 +2,11 @@ import React from "react";
 import { AppBar, Toolbar, Box, Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-function NavBar() {
+function Navbar() {
   const navigate = useNavigate();
 
   return (
-    <AppBar position="static" color="primary" sx={{ boxShadow: 0 }}>
+    <AppBar position="fixed" color="primary" sx={{ boxShadow: 0 }}>
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         
         <Typography variant="h6" component="div">
@@ -30,4 +30,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Navbar;
